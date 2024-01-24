@@ -1,0 +1,27 @@
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25vw;
+    height: 50vh;
+    background-color: red;
+}
+.container{
+    position: absolute;
+    top: 25vh;
+    left: 37.5vw;
+}
+
+.button{
+    padding: 1rem;
+    margin: 1rem;
+
+}
+.modal{
+    width: 50vw;
+    height: 50vh;
+}
+.modal::backdrop{
+    background-color: aqua;
+    opacity: 0.4;
+}
