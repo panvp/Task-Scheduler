@@ -5,3 +5,29 @@
 .label{
     min-width: 5vw;
 }
+
+.container{
+    display: flex;
+    width: 20vw;
+    height: 50vh;
+    border: 2px solid cyan;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.loader{
+    background-color: red;
+    height: 100%;
+}
+
+.row{
+    width: 20vw;
+    height: 10vh;
+
+    border: 2px solid black;
+}
+
+@media screen and (max-width: 200px){
+.row{
+    background-color: aqua;
+}    
+}

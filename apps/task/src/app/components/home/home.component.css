@@ -1,0 +1,14 @@
+.taskList{
+    margin-top: 25vh;
+    width: 50vw;
+    margin-left: 25vw;
+    /* border: 2px solid red; */
+}
+.modal{
+    width: 50vw;
+    height: 50vh;
+}
+.modal::backdrop{
+    background-color: aqua;
+    opacity: 0.4;
+}
