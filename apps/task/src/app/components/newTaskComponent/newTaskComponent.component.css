@@ -1,0 +1,5 @@
+.modal-newTask::backdrop{
+    opacity: 0.6;
+    background-color: aliceblue;
+    
+}

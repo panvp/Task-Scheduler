@@ -17,8 +17,9 @@ const Home = () => {
 
   return (
     <>
-      <div  style={{height: "100vh"}} className="bg-sky-100">
-        <div className="p-8 text-4xl font-bold text-center">Task Scheduler</div>
+      <div className="bg-sky-100 flex flex-col items-center">
+        <div className="p-8 text-4xl font-bold">Task Scheduler</div>
+        <NewTaskComponent />
         <div className="taskList">
           <div className="flex justify-between">
             <button
@@ -34,13 +35,13 @@ const Home = () => {
               <option className="font-medium rounded-lg"> A</option>
               <option className="font-medium rounded-lg"> A</option>
             </select>
-          </div>
+          </div>  
           <div className="my-8 bg-slate-200">
             <ViewAllTaskComponent />
           </div>
         </div>
+      
       </div>
-      <NewTaskComponent />
     </>
   );
 };
