@@ -44,7 +44,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="bg-sky-100 flex flex-col items-center">
+      <div className="bg-sky-100 h-screen flex flex-col items-center">
         <div className="p-8 text-4xl font-bold">Task Scheduler</div>
         <NewTaskComponent isEdit={isEdit} setIsEdit={setIsEdit} indexToEdit={indexToEdit} taskToBeEdited={taskToBeEdited} setAllTaskList={setAllTaskList} />
         <div className="taskList">
