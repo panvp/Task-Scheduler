@@ -57,11 +57,11 @@ const Home = () => {
               Add Task
             </button>
 
-            <select className="text-blue-600 font-medium rounded-lg text-sm  px-5 py-2.5 me-2 mb-2 cursor-pointer" onChange={onFilterChangeHandler}>
-              <option className="font-medium"> All</option>
-              <option className="font-medium rounded-lg"> To Do</option>
-              <option className="font-medium rounded-lg"> In Progress</option>
-              <option className="font-medium rounded-lg"> Done</option>
+            <select className="text-blue-600 font-medium rounded-lg text-sm px-5 md:px-2 py-2.5 mb-2 cursor-pointer" onChange={onFilterChangeHandler}>
+              <option> All</option>
+              <option> To Do</option>
+              <option> In Progress</option>
+              <option> Done</option>
             </select>
           </div>  
           <div className="my-8 bg-slate-200">

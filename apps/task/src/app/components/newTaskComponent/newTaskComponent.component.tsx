@@ -73,9 +73,9 @@ const NewTaskComponent = (props: newTaskPropsType) => {
         <div className="m-4 p-4 md:mt-4 md:mb-8 md:p-8 flex flex-col justify-around items-start">
           <h1 className="text-2xl font-bold self-center"> {heading}</h1>
             <div className="flex flex-wrap mt-2 md:mt-4">
-              <div className="">
-                <label className='' htmlFor='titleInput'> Task Name: </label>
-                <input type="text" id="titleInput" size={12} value={title} placeholder="Enter name here" onChange={titleOnChangeHandler} />
+              <div>
+                <label htmlFor='titleInput'> Task Name: </label>
+                <input type="text" className="md:mx-2" id="titleInput" size={12} value={title} placeholder="Enter name here" onChange={titleOnChangeHandler} />
               </div>
               <select value={dropdownValue} onChange={dropdownChangeHandler}>
                 <option>To Do</option>
@@ -85,7 +85,7 @@ const NewTaskComponent = (props: newTaskPropsType) => {
             </div>
             <div className="mt-2 md:mt-4">
               <label className='' htmlFor='titleInput'> Task Description: </label>
-              <input type="text" id="titleInput" value={desciption} onChange={descriptionOnChangeHandler} placeholder="Enter here" className='' />
+              <input type="text" id="titleInput" className="md:mx-2" value={desciption} onChange={descriptionOnChangeHandler} placeholder="Enter here"/>
             </div>
             {/* <div > */}
             <button  className={`font-medium rounded-lg text-sm px-2 md:px-8 py-2 mt-2 md:mt-4 text-center self-center ${!isDisableButton ? "bg-blue-700 text-white" : "bg-slate-200"}`}disabled={isDisableButton} onClick={saveClickHandler}> {buttonName}</button>
