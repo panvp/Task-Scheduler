@@ -5,14 +5,9 @@ const NewTaskComponent = (props: any) => {
   const [title, setTitle] = useState<string>('');
   const [desciption, setDesciption] = useState<string>('');
   const [dropdown, setDropdown] = useState<string>('');
-  const modalClose = (event: any) => {
-    const modal: any = document.querySelector('.modal-newTask');
-    modal.showModal();
-  };
 
   return (
     <>
-      <button onClick={modalClose}> Open</button>
       <dialog className="modal-newTask">
         <div className="m-4 p-4 md:mt-4 md:mb-8 md:p-8 flex flex-col justify-around items-start">
           <h1 className="text-2xl font-bold self-center"> Add a new task</h1>

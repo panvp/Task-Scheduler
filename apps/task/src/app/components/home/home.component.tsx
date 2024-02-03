@@ -6,7 +6,7 @@ import ViewAllTaskComponent from '../viewAllTaskComponent/viewAllTaskComponent.c
 const Home = () => {
   const [allTaskList, setAllTaskList] = useState();
 
-  const newTaskModalHandler = () => {
+  const addTaskHandler = () => {
     const modal: any = document.querySelector('.modal-newTask');
     modal.showModal();
   };
@@ -24,6 +24,7 @@ const Home = () => {
           <div className="flex justify-between">
             <button
               type="button"
+              onClick={addTaskHandler}
               className="text-white bg-blue-700 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
             >
               Add Task
