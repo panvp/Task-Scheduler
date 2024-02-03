@@ -8,6 +8,8 @@
 ## Start the app
 
 First go inside the project folder using cd project
+
 Install the packages using npm i
+
 To start the development server run `npm run serve`. Open your browser and navigate to http://localhost:4200/
 
