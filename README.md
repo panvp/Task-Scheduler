@@ -13,3 +13,7 @@ Install the packages using npm i
 
 To start the development server run `npm run serve`. Open your browser and navigate to http://localhost:4200/
 
+## Unit Test Coverage report
+![image](https://github.com/panvp/Task-Scheduler/assets/25225367/47c5ea74-988d-4209-a53a-87705a73c99e)
+
+
