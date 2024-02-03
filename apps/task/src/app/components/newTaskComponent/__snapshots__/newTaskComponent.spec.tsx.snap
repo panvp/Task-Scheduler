@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Screen Test Cases Snapshot testing 1`] = `
+<dialog
+  class="modal-newTask"
+  data-testid="newTaskComponent"
+>
+  <div
+    class="m-4 p-4 md:mt-4 md:mb-8 md:p-8 flex flex-col justify-around items-start"
+  >
+    <h1
+      class="text-2xl font-bold self-center"
+    >
+       
+      Add your task
+    </h1>
+    <div
+      class="flex flex-wrap mt-2 md:mt-4"
+    >
+      <div>
+        <label
+          for="titleInput"
+        >
+           Task Name: 
+        </label>
+        <input
+          class="sm:mx-2"
+          id="titleInput"
+          placeholder="Enter name here"
+          size="12"
+          type="text"
+          value=""
+        />
+      </div>
+      <select>
+        <option>
+          To Do
+        </option>
+        <option>
+          In Progress
+        </option>
+        <option>
+          Done
+        </option>
+      </select>
+    </div>
+    <div
+      class="mt-2 md:mt-4"
+    >
+      <label
+        class=""
+        for="titleInput"
+      >
+         Task Description: 
+      </label>
+      <input
+        class="sm:mx-2"
+        id="titleInput"
+        placeholder="Enter here"
+        type="text"
+        value=""
+      />
+    </div>
+    <button
+      class="font-medium rounded-lg text-sm px-2 md:px-8 py-2 mt-2 md:mt-4 text-center self-center bg-slate-200"
+      disabled=""
+    >
+       
+      Add task
+    </button>
+  </div>
+</dialog>
+`;

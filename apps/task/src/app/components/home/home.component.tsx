@@ -18,7 +18,7 @@ const Home = () => {
 
   const openModal = () =>{
     const modal: any = document.querySelector('.modal-newTask');
-    modal.showModal();
+    modal?.showModal();
   }
   
   const editTaskHandler = (index: number) =>{
@@ -44,12 +44,13 @@ const Home = () => {
 
   return (
     <>
-      <div className="bg-sky-100 h-screen flex flex-col items-center">
+      <div className="bg-sky-100 h-screen flex flex-col items-center" data-testId="homeScreen">
         <div className="p-8 text-4xl font-bold">Task Scheduler</div>
         <NewTaskComponent isEdit={isEdit} setIsEdit={setIsEdit} indexToEdit={indexToEdit} taskToBeEdited={taskToBeEdited} setAllTaskList={setAllTaskList} />
         <div className="taskList">
           <div className="flex justify-between">
             <button
+              data-testId="addTaskButton"
               type="button"
               onClick={addTaskHandler}
               className="text-white bg-blue-700 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2"
@@ -57,7 +58,7 @@ const Home = () => {
               Add Task
             </button>
 
-            <select className="text-blue-600 font-medium rounded-lg text-sm px-5 md:px-2 py-2.5 mb-2 cursor-pointer" onChange={onFilterChangeHandler}>
+            <select data-testId="filterButton" className="text-blue-600 font-medium rounded-lg text-sm px-5 md:px-2 py-2.5 mb-2 cursor-pointer" onChange={onFilterChangeHandler}>
               <option> All</option>
               <option> To Do</option>
               <option> In Progress</option>

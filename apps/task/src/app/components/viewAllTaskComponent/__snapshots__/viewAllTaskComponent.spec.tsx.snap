@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Screen Test Cases Snapshot testing 1`] = `
+<div
+  class="flex flex-wrap mt-4 mb-4 justify-center"
+  data-testid="viewAllComponent"
+/>
+`;

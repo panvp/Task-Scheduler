@@ -1,6 +1,6 @@
 export interface taskListType{
     title: string;
-    desciption: string;
+    description: string;
     dropdownValue: string;
 }
 
