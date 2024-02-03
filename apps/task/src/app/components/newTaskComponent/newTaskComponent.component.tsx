@@ -6,6 +6,7 @@ const NewTaskComponent = (props: newTaskPropsType) => {
   const [title, setTitle] = useState<string>('');
   const [desciption, setDesciption] = useState<string>('');
   const [dropdownValue, setDropdownValue] = useState<string>('To Do');
+  const [isDisableButton, setIsDisableButton] = useState<boolean>(true);
 
   const heading = isEdit ? "Edit your task" : "Add your task";
   const buttonName = isEdit? "Update task" : "Add task";
@@ -19,6 +20,10 @@ const NewTaskComponent = (props: newTaskPropsType) => {
     }
 
   },[isEdit])
+
+  useEffect(()=>{
+    title === "" ? setIsDisableButton(true) : setIsDisableButton(false);
+  },[title])
 
   const titleOnChangeHandler = (event: any) =>{
     // let element = event.target as HTMLInputElement;
@@ -82,9 +87,9 @@ const NewTaskComponent = (props: newTaskPropsType) => {
               <label className='' htmlFor='titleInput'> Task Description: </label>
               <input type="text" id="titleInput" value={desciption} onChange={descriptionOnChangeHandler} placeholder="Enter here" className='' />
             </div>
-            <div className="text-white bg-blue-700 font-medium rounded-lg text-sm px-2 md:px-8 py-2 mt-2 md:mt-4 text-center self-center">
-            <button onClick={saveClickHandler}> {buttonName}</button>
-            </div>
+            {/* <div > */}
+            <button  className={`font-medium rounded-lg text-sm px-2 md:px-8 py-2 mt-2 md:mt-4 text-center self-center ${!isDisableButton ? "bg-blue-700 text-white" : "bg-slate-200"}`}disabled={isDisableButton} onClick={saveClickHandler}> {buttonName}</button>
+            {/* </div> */}
         </div>
       </dialog>
     </>
