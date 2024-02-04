@@ -5,7 +5,6 @@ import './viewAllTaskComponent.component.css';
 const ViewAllTaskComponent = (props: ViewAllTaskPropsType) => {
   const { allTaskList, deleteTaskHandler, editTaskHandler, filterValue } =
     props;
-  console.log(props.allTaskList);
   return (
     <>
       <div className="flex flex-wrap mt-4 mb-4 justify-center" data-testId="viewAllComponent">

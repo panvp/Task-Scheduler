@@ -72,19 +72,20 @@ const NewTaskComponent = (props: newTaskPropsType) => {
       <dialog className="modal-newTask" data-testId="newTaskComponent">
         <div className="m-4 p-4 md:mt-4 md:mb-8 md:p-8 flex flex-col justify-around items-start">
           <h1 className="text-2xl font-bold self-center"> {heading}</h1>
-            <div className="flex flex-wrap mt-2 md:mt-4">
-              <div>
+            <div className="mt-2 md:mt-4">
                 <label htmlFor='titleInput'> Task Name: </label>
                 <input type="text" className="sm:mx-2" id="titleInput" size={12} value={title} placeholder="Enter name here" onChange={titleOnChangeHandler} />
-              </div>
-              <select value={dropdownValue} onChange={dropdownChangeHandler}>
+            </div>
+            <div className="mt-2 md:mt-4">
+            <label htmlFor='taskStatus'> Task Status: </label>
+              <select id="taskStatus" value={dropdownValue} onChange={dropdownChangeHandler}>
                 <option>To Do</option>
                 <option>In Progress</option>
                 <option>Done</option>
               </select>
             </div>
             <div className="mt-2 md:mt-4">
-              <label className='' htmlFor='titleInput'> Task Description: </label>
+              <label className='' htmlFor='titleInput'> Description: </label>
               <input type="text" id="titleInput" className="sm:mx-2" value={description} onChange={descriptionOnChangeHandler} placeholder="Enter here"/>
             </div>
             {/* <div > */}
